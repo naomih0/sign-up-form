@@ -1,8 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body {
-    background-color: pink;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 main {
@@ -12,8 +17,58 @@ main {
 }
 
 .left {
-    border: rgb(0, 255, 183) 3px solid;
+    position: relative;
 }
+
+.left img {
+    width: 370px;
+    height: 100%;
+    object-fit: fill;
+}
+
+.bg {
+    position: absolute;
+    background-color: rgb(0,0,0,.4);
+    top: 10rem;
+    width: 100%;
+    color: rgb(239, 239, 239);
+    text-align: center;
+}
+
+.credit {
+    position: absolute;
+    top: 40rem;
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+    left: 0px;
+    color: rgb(239, 239, 239);
+}
+
 .right {
-    border: red 3px solid;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.logo p {
+    font-size: 70px;
+    font-family: NorseBold;
+    padding-top: 20px;
+}
+
+.logo img {
+    max-width: 95px;
+    max-height: 95px;
+    width: auto;
+    height: auto;
+}
+
+@font-face {
+    font-family: NorseBold;
+    src: url('../font/Norse-Bold.otf') format('opentype');
 }
