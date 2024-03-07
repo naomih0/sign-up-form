@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family:  Arial;
 }
 
 
@@ -8,6 +9,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
+    background-color: #f2f3f8;
 }
 
 main {
@@ -31,7 +33,7 @@ main {
     background-color: rgb(0,0,0,.4);
     top: 10rem;
     width: 100%;
-    color: rgb(239, 239, 239);
+    color: #fcfdff;
     text-align: center;
 }
 
@@ -42,10 +44,7 @@ main {
     font-size: 12px;
     width: 100%;
     left: 0px;
-    color: rgb(239, 239, 239);
-}
-
-.right {
+    color: #fcfdff;
 }
 
 .logo {
@@ -71,4 +70,87 @@ main {
 @font-face {
     font-family: NorseBold;
     src: url('../font/Norse-Bold.otf') format('opentype');
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.form {
+    box-shadow: 0px 2px 5px 2px rgb(215, 215, 215);
+    margin: 10px 0px;
+    padding: 20px 40px;
+    background-color: #fcfdff;
+}
+
+.form p {
+    margin: 0px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #3f3f44;
+}
+
+.row {
+    display: flex; 
+}
+
+.input-box:nth-child(2) {
+  margin-left: 40px;
+} 
+
+label {
+    margin-bottom: 3px;
+    font-size: 13px;
+    color: #4b4b52;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fcfdff;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 12px 0px;
+}
+
+.top, .bottom {
+    padding: 20px 40px;
+}
+
+button {
+    background-color: #4d7892;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 5px;
+    color: #fcfdff;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 3px 1px rgb(214, 213, 213);
+    cursor: pointer;
+}
+
+.bottom p {
+    font-size: 12px;
+}
+
+.top p {
+    font-size: 18px;
+    color: #2f2f38;
+}
+
+a {
+    color: #fcfdffe7;
+}
+
+.bottom a {
+    color: #4d7892;
+    text-decoration: none;
+    font-weight: 800;
 }
